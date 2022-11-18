@@ -43,5 +43,11 @@
 - User could not input `min` larger than `max` in here !!!
 
 
+| Error Detect Screen (size error screen)     |
+| ------------------------------------------- |
+| ![](https://i.imgur.com/fZnaRTy.png)        |
+
+- User could not input `size` larger than `max` - `min` in here !!!
+
 
 
