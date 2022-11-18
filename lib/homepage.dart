@@ -93,6 +93,9 @@ class _MyHomePageState extends State<MyHomePage> {
                         if (inputVal!.isEmpty){
                           inputVal = 5.toString();
                         }
+                        if(int.parse(inputVal) >= max - min){
+                          return 'Size must be less than max - min';
+                        }
                         setState(() {
                           size = int.parse(inputVal!);
                         });
