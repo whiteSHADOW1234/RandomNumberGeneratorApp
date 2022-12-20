@@ -89,14 +89,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   
                   updateTextFormField(
-                    labeltext: 'Output numbers?',
+                    labeltext: 'Output numbers size',
                     validator: (inputVal){
                       try{
                         if (inputVal!.isEmpty){
                           inputVal = 5.toString();
                         }
                         if(int.parse(inputVal) > max - min){
-                          return "Output size mustn't greater than max-min";
+                          return "The size mustn't greater than max-min";
                         }
                         setState(() {
                           size = int.parse(inputVal!);

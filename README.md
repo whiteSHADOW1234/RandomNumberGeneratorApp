@@ -1,13 +1,15 @@
 # Random Number Generator App
+## Introduction
 - This app generates `size` numbers between `min` and `max`
 - User could decide `size`, `min`, `max` values
-- [Here's the apk file](https://github.com/whiteSHADOW1234/RandomNumberGeneratorApp/blob/main/app-release.apk)
 
-### Screens
 
-| First Screen (initialize screen)    |
+## Normal Screens
+
+### First Screen (initialize screen)
+
+| ![](https://i.imgur.com/STC6X7q.png)|
 | ----------------------------------- |
-| ![](https://i.imgur.com/zAfGAQ6.png)|
 
 - The initial value of `max` is 50
 - The initial value of `min` is 0
@@ -15,40 +17,45 @@
 
 
 
-| Second Screen (initial generate screen)      |
+### Second Screen (initial generate screen)
+
+| ![](https://i.imgur.com/pdNv9W1.png)         |
 | -------------------------------------------- |
-| ![](https://i.imgur.com/bPMaGoi.png)         |
 
 - User could choose not to change any value
 - After pressing 'Generate' button, user could get 5 random values between 0 to 50
 
-| Third Screen (change generate screen)       |
+### Third Screen (change generate screen)
+
+| ![](https://i.imgur.com/iXUB0Xr.png)        |
 | ------------------------------------------- |
-| ![](https://i.imgur.com/Dtvm5c2.png)        |
 
 - User could change `min`, `max`, `size` values
-- After pressing 'Generate' button, user could get `size` random values between `min` to `max`
+- After pressing 'Generate' button, user could get `size` random values between `min` to `max` 
+- ***NOTED: `min` <= `size` < `max`***
+
+## Error Detect Screens
 
 
 
-| Error Detect Screen (char error screen)     |
+### Char error screen
+
+| ![](https://i.imgur.com/IpiDG5G.png)        |
 | ------------------------------------------- |
-| ![](https://i.imgur.com/OuBuWn7.png)        |
 
 - User could not input `char` or `string` in here !!!
 
-| Error Detect Screen (range error screen)    |
+### Range error screen
+
+| ![](https://i.imgur.com/PdGpRex.png)        |
 | ------------------------------------------- |
-| ![](https://i.imgur.com/xIHLA75.png)        |
 
 - User could not input `min` larger than `max` in here !!!
 
 
-| Error Detect Screen (size error screen)     |
+### Size error screen
+
+| ![](https://i.imgur.com/pD2rolN.png)        |
 | ------------------------------------------- |
-| ![](https://i.imgur.com/fZnaRTy.png)        |
 
 - User could not input `size` larger than `max` - `min` in here !!!
-
-
-
