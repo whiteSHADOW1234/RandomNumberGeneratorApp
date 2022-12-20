@@ -35,7 +35,9 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Center(
+          child: Text(widget.title),
+        )
       ),
       body: Center(
         child: Column(
@@ -87,14 +89,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   
                   updateTextFormField(
-                    labeltext: 'How much numbers do you want?',
+                    labeltext: 'Output numbers?',
                     validator: (inputVal){
                       try{
                         if (inputVal!.isEmpty){
                           inputVal = 5.toString();
                         }
-                        if(int.parse(inputVal) >= max - min){
-                          return 'Size must be less than max - min';
+                        if(int.parse(inputVal) > max - min){
+                          return "Output size mustn't greater than max-min";
                         }
                         setState(() {
                           size = int.parse(inputVal!);
