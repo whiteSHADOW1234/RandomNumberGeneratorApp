@@ -1,6 +1,7 @@
 # Random Number Generator App
 - This app generates `size` numbers between `min` and `max`
 - User could decide `size`, `min`, `max` values
+- [Here's the apk file](https://github.com/whiteSHADOW1234/RandomNumberGeneratorApp/blob/main/app-release.apk)
 
 ### Screens
 
