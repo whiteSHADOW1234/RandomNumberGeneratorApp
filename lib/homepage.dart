@@ -127,10 +127,18 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.headline6,
             ),
             const SizedBox(height: 10),
-            Text(
-              numbers.toString(),
-              style: Theme.of(context).textTheme.headline6,
+            Container(
+              padding: const EdgeInsets.only(left: 20, right: 20),
+              child: Text(
+                numbers.toString().substring(1, numbers.toString().length - 1),
+                style: Theme.of(context).textTheme.headline6,
+              ),
             ),
+            
+            // Text(
+            //   numbers.toString(),
+            //   style: Theme.of(context).textTheme.headline6,
+            // ),
 
           ],
         ),
